@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <title>学生基本信息列表</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<script src="/util/helper.js" type="text/javascript"></script> 
+	<link href="/util/style.css" type="text/css" rel="stylesheet"> 
+	<style type="text/css"> 
+		.inputComm2{border:solid 1px #AAAAAA; height: 22px; line-height:22px; padding-left: 4px; width:300px;}
+		.inputComm3{border:solid 1px #AAAAAA; line-height:22px; padding-left: 4px; width:600px;} 
+	</style>
+  </head>
+  <body class="bodyMx1" onLoad="pageLoad();"> 
+  	
+	<script language="javascript">_header();</script>
+
+	<div id="leftFloat" style="position: absolute; z-index:-1; height:300px; background-color: #f3f3f3;">&nbsp;</div> 
+	<div id="mContext" class="centerX" style="background-color: #fff; min-height:800px;"> 
+		<div id="leftGuide" class="leftMx1">
+			<script language="javascript">_left();</script>
+		</div>
+		<div class="rightMx1" >	 
+			<div style="margin-top:20px; text-align:left; font-size:24px; color: #136ebf; height:45px; line-height:45px; padding-left:6px;">
+			&#8226;&nbsp;&nbsp;学生基本信息列表：</div>
+			<div style="border-top: 1px dashed #C1C4C4; height:16px;"></div>
+			
+			<div style="padding:0px 0px 20px 4px; font-size:14px; line-height:28px;">
+				<table id="tab" class="hiframe" style="width:956px; font-size:14px; margin-top: 10px;">
+					<tr style="background-color:#EEEEEE;">
+						<td width=30></td>
+						<td>姓名</td>
+						<td>学号</td>
+						<td>所在学院</td>
+						<td>班级</td>
+						<td>出生年月</td>
+						<td>年级</td>
+						<td>电话</td>
+						<td>其他联系方式</td>
+						<td>备注</td>
+						<td width=90> </td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>张明天</td>
+						<td>JKY202103001</td>
+						<td>计算机科学与工程学院</td>
+						<td>202103001</td>
+						<td>1999-10-1</td>
+						<td>研二</td>
+						<td>13603460021</td>
+						<td></td>
+						<td></td>
+						<td><a href="">详细</a>，<a href="">奖学金</a></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>朱佳</td>
+						<td>JKY202103002</td>
+						<td>计算机科学与工程学院</td>
+						<td>202103002</td>
+						<td>2000-3-5</td>
+						<td>研二</td>
+						<td>13705461145</td>
+						<td></td>
+						<td></td>
+						<td><a href="">详细</a>，<a href="">奖学金</a></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div> 
+ 
+		</div>  
+		<div style="clear:both;"></div>
+	</div>   
+
+	<div class="bottomMx1">  
+		 
+	</div>
+
+	<div id="app"></div>
+    <!-- built files will be auto injected -->
+ 
+	<script language="javascript">
+		 
+		function onResize()
+		{
+			_fixLeft("leftFloat", "mContext", "leftGuide");
+		}
+
+		function pageLoad()
+		{
+			onResize(); 
+			window.onresize = onResize;
+		} 
+
+		function postInfo()
+		{
+			alert("数据提交开发中......");
+		}
+	</script>
+
+
+  </body>
+</html>

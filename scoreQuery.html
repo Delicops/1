@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <title>评分查询</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<script src="/util/helper.js" type="text/javascript"></script> 
+	<link href="/util/style.css" type="text/css" rel="stylesheet"> 
+	<style type="text/css">
+		.mr{font-size: 16px; font-weight:bold;}
+		.mr2{font-size: 16px; font-weight:bold; color:#FF0000;}
+		.inputComm2{border:solid 1px #AAAAAA; height: 22px; line-height:22px; padding-left: 4px; width:300px;}
+		.inputComm3{border:solid 1px #AAAAAA; line-height:22px; padding-left: 4px; width:300px;} 
+	</style>
+  </head>
+  <body class="bodyMx1" onLoad="pageLoad();"> 
+  	
+	<script language="javascript">_header();</script>
+
+	<div id="leftFloat" style="position: absolute; z-index:-1; height:300px; background-color: #f3f3f3;">&nbsp;</div> 
+	<div id="mContext" class="centerX" style="background-color: #fff; min-height:800px;"> 
+		<div id="leftGuide" class="leftMx1">
+			<script language="javascript">_left();</script>
+		</div>
+		<div class="rightMx1" >	 
+			<div style="margin-top:20px; text-align:left; font-size:24px; color: #136ebf; height:45px; line-height:45px; padding-left:6px;">
+			&#8226;&nbsp;&nbsp;评分查询：</div>
+			<div style="border-top: 1px dashed #C1C4C4; height:16px;"></div>
+			
+			<div style="padding:0px 0px 20px 20px; font-size:14px; line-height:28px;">
+				<table id="tab" class="hiframe" style="width:800px; font-size:14px; margin-top: 10px;">
+					<tr style="background-color:#EEEEEE;">
+						<td width=150></td>
+						<td style="font-size:16px; font-weight:bold;">输入学号查询分数：</td>
+					</tr>
+					<tr >
+						<td>学号：</td>
+						<td>
+							<input type="text" id="sn" class="inputComm2"  placeholder="查询并选择...">
+							<a href="javascript: alert('程序开发中');">查询</a>
+						</td> 
+					</tr> 
+				</table>
+
+				<table id="tab" class="hiframe" style="width:800px; font-size:14px; margin-top: 10px;">
+					<tr style="background-color:#EEEEEE;">
+						<td width=150></td>
+						<td style="font-size:16px; font-weight:bold;">分数详细：</td>
+					</tr>
+					<tr >
+						<td>姓名：</td>
+						<td>张明天</td> 
+					</tr> 
+					<tr >
+						<td>年级：</td>
+						<td>研一年级</td> 
+					</tr> 
+					<tr >
+						<td>基础分：</td>
+						<td>18</td> 
+					</tr> 
+					<tr >
+						<td>荣誉分：</td>
+						<td>4</td> 
+					</tr>
+					<tr >
+						<td>导师组评价分：</td>
+						<td>4</td> 
+					</tr>
+					<tr >
+						<td>总分：</td>
+						<td style="font-size:18px; color:#FF0000;">26</td> 
+					</tr>
+				</table>
+			</div> 
+ 
+		</div>  
+		<div style="clear:both;"></div>
+	</div>   
+
+	<div class="bottomMx1">  
+		 
+	</div>
+  
+	<script language="javascript">
+		 
+		function onResize()
+		{
+			_fixLeft("leftFloat", "mContext", "leftGuide");
+		}
+
+		function pageLoad()
+		{
+			onResize(); 
+			window.onresize = onResize;
+		} 
+
+		function postInfo()
+		{
+			alert("数据提交开发中......");
+		}
+	</script>
+
+
+  </body>
+</html>
